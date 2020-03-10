@@ -29,3 +29,20 @@ episode solved - 580
 max score - 16.41
 max score episode - 990
 
+### 9b8f5d8 - "Very Naive" solution - signle DQN - logs/experiment2
+Idea: check how bad is single DQN
+
+problem solved - no
+max score - -0.09
+max score episone - 290
+
+### 9b8f5d8 - "Very Naive" solution - dual DQN with hard step update - logs/experiment2
+Idea: Check if classifacal DualDQN with hard udpate is better thatn proposed TAU soft update
+
+problem solved - yes
+episode solved - 530
+max score - 14.76
+max score episode - 990
+
+
+
