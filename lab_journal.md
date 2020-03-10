@@ -1,8 +1,8 @@
 # Log of experiments
 
 
-### Git commit - "Naive" solution - logs/experiment1
-Based on a priori knowledge I took default solution from lunar lander and used it here, adjusting eps_decay to 0.98 in roder to see  very fast learing with potentially impaired max score.
+### 9b8f5d8 - "Naive" solution - logs/experiment1
+Idea: Based on a priori knowledge I took default solution from lunar lander and used it here, adjusting eps_decay to 0.98 in roder to see  very fast learing with potentially impaired max score.
 
 problem solved - yes
 episode solved - 310
@@ -20,3 +20,12 @@ UPDATE_EVERY = 4        # how often to update the network
 
 default DQN
 default Replay buffer
+
+### 9b8f5d8 - "Naive" solution EPS 0.995 - logs/experiment2
+Idea: Expect slower learning but higher score
+
+problem solved - yes
+episode solved - 580
+max score - 16.41
+max score episode - 990
+
