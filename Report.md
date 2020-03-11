@@ -57,4 +57,7 @@ eps_start = 1.0
 eps_end = 0.01 
 eps_decay = 0.98
 
+## Used external code
+
+[RL Adventure GitHub](https://github.com/higgsfield/RL-Adventure) - implementation of Dual DQN model and idea of naive PER approach
 
