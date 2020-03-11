@@ -27,7 +27,7 @@ Two baseline NN archtectures were used:
 | D-DQN-S       | yes        |       310         |   16.54   |    810              |
 | D-DQN-S-E     | yes        |       580         |   16.41   |    990              |
 | D-DQN-H       | yes        |       530         |   14.76   |    990              |
-| Duel-DQN      | yes        |       340         |   16.40   |    650              |
+| Duel-DQN      | yes        |       331         |   17.13   |    768              |
 | Duel-DQN - PER| yes        |       410         |   16.49   |    1000             |
 
 ![performance plot](plot.png "Comparison of various training techinques")

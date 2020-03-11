@@ -4,6 +4,9 @@
 
 # Solution to "Project 1: Navigation" of the Udacity "Deep Reinforcement Learning Nanodegree"
 
+### Results
+[Results of various approaches and report is here](https://github.com/crazyleg/RL-banana-world/blob/master/Report.md)
+
 ### Introduction
 
 For this project, we train an agent to navigate (and collect bananas!) in a large, square world. The original setup of the exercise is to be found [here](https://github.com/udacity/deep-reinforcement-learning/tree/master/p1_navigation)
@@ -43,4 +46,6 @@ The task is episodic, and in order to solve the environment, the agent must get 
 
 The notebook `Navigation-Solution.ipynb` contains the code to set up the environment and the outer episode iteration to solve the reinforcement problem. Our solution uses a (double) deep Q-learning network (only standard feedforward layers) and experience replay.
 
-The agent, the deep Q-Network and memory buffer are implemented in the file `dqn_agent.py`. The Agent class takes an optional parameter to choose between a standard Q-Network or a Double-Q-Network (see also [this paper](https://arxiv.org/abs/1509.06461)). The most relevant functions are `_init_` and `forward` in the `QNetwork` class, where the architecture of the deep network are defined.
+The agent, the deep Q-Network and memory buffer are implemented in the files `dqn_agent_duel_ddqn.py` and `model.py`. 
+
+The winning solution is a mix of dual DQN with soft update, and Duelling DQN network architecture. To speed up training process Epsilon decay for desreased to 0.98.
