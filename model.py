@@ -54,12 +54,3 @@ class DuelingDQN(nn.Module):
         advantage = self.advantage(x)
         value     = self.value(x)
         return value + advantage  - advantage.mean()
-    
-    def act(self, state, epsilon):
-        if random.random() > epsilon:
-            state   = Variable(torch.FloatTensor(state).unsqueeze(0), volatile=True)
-            q_value = self.forward(state)
-            action  = q_value.max(1)[1].data[0]
-        else:
-            action = random.randrange(env.action_space.n)
-        return action
